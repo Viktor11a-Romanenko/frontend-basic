@@ -67,7 +67,7 @@ function getWeatherDescription() {
     99: "Thunderstorm with heavy hail",
   };
 
-  
+
 }
 
 // Функция для отображения данных о погоде на странице
@@ -79,5 +79,6 @@ function displayWeatherData(city, temperature, windspeed, weatherDescription) {
   document.getElementById("weatherDescription").textContent =
     weatherDescription;
 }
-
+getWeatherDescription();
+displayWeatherData();
 fetchGeoAndWeather();
